@@ -20,7 +20,7 @@ Module::Build->new(
     },
     build_requires => {
         'Test::More'        => 0, # dist Test-Simple
-        'Test::NoWarnings'  => 0,
+        'Test::NoWarnings'  => '1.03',
         'Test::Exception'   => 0,
         'Test::Differences' => 0,
     },

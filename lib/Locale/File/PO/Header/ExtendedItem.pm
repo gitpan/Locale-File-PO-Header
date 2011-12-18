@@ -50,7 +50,7 @@ method extract_msgstr ($msgstr_ref) {
     return;
 }
 
-method lines () {
+method lines {
     my $extended = $self->extended;
     defined $extended
         or return;

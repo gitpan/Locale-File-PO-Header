@@ -1,4 +1,4 @@
-Locale::File::PO::Header version 0.001
+Locale::File::PO::Header version 0.002
 ======================================
 
 Utils to build/extract the PO header.

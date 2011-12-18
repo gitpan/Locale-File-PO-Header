@@ -7,7 +7,7 @@ use syntax qw(method);
 
 our $VERSION = '0.001';
 
-method default () {
+method default {
     return;
 }
 
@@ -29,8 +29,8 @@ method trigger_helper ($arg_ref) {
     return;
 }
 
-method header_keys () {
-    return $self->name();
+method header_keys {
+    return $self->name;
 }
 
 method format_line ($line, %args) {

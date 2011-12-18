@@ -43,8 +43,8 @@ has mail_address => (
     },
 );
 
-method header_keys () {
-    my $name = $self->name();
+method header_keys {
+    my $name = $self->name;
     return "${name}_name", "${name}_address";
 }
 
@@ -103,7 +103,7 @@ method extract_msgstr ($msgstr_ref) {
     return;
 };
 
-method lines () {
+method lines {
     if ( ! length $self->mail_name && ! length $self->mail_address ) {
         return;
     }

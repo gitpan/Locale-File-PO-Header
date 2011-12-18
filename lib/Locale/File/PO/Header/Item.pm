@@ -18,13 +18,14 @@ has name => (
 has default => (
     is      => 'rw',
     isa     => 'Str',
+    default => q{},
 );
 
 has item => (
     is      => 'rw',
     isa     => 'Str|Undef',
     lazy    => 1,
-    default => method () {
+    default => method {
         return $self->default;
     },
     trigger => method ($item, $current_item) {
@@ -56,7 +57,7 @@ method extract_msgstr ($msgstr_ref) {
     return;
 };
 
-method lines () {
+method lines {
     length $self->item
         or return;
 

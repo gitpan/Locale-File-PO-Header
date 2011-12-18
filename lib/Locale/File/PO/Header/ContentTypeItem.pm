@@ -39,7 +39,7 @@ has content_type => (
     is      => 'rw',
     isa     => 'Str|Undef',
     lazy    => 1,
-    default => method () {
+    default => method {
         return $self->default_content_type;
     },
     trigger => method ($content_type, $current_content_type) {
@@ -56,7 +56,7 @@ has charset => (
     is      => 'rw',
     isa     => 'Str|Undef',
     lazy    => 1,
-    default => method () {
+    default => method {
         return $self->default_charset;
     },
     trigger => method ($charset, $current_charset) {
@@ -69,8 +69,8 @@ has charset => (
     },
 );
 
-method header_keys () {
-    my $name = $self->name();
+method header_keys {
+    my $name = $self->name;
 
     return $name, 'charset';
 }
@@ -124,7 +124,7 @@ method extract_msgstr ($msgstr_ref) {
     return;
 }
 
-method lines () {
+method lines {
     return $self->format_line(
         '{name}: {content_type}; charset={charset}',
         name         => $self->name,

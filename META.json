@@ -19,7 +19,7 @@
             "Test::Differences" : 0,
             "Test::Exception" : 0,
             "Test::More" : 0,
-            "Test::NoWarnings" : 0
+            "Test::NoWarnings" : "1.03"
          }
       },
       "configure" : {
@@ -47,7 +47,7 @@
    "provides" : {
       "Locale::File::PO::Header" : {
          "file" : "lib/Locale/File/PO/Header.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       },
       "Locale::File::PO::Header::Base" : {
          "file" : "lib/Locale/File/PO/Header/Base.pm",
@@ -76,5 +76,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

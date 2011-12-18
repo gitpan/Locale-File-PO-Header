@@ -11,7 +11,7 @@ require Locale::File::PO::Header::MailItem;
 require Locale::File::PO::Header::ContentTypeItem;
 require Locale::File::PO::Header::ExtendedItem;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 has _header => (
     is       => 'rw',
@@ -24,7 +24,7 @@ has _header_index => (
     is       => 'ro',
     init_arg => undef,
     lazy     => 1,
-    default  => method () {
+    default  => method {
         my %header_index;
         my $index = 0;
         for my $item ( @{ $self->_header } ) {
@@ -38,7 +38,7 @@ has _header_index => (
     },
 );
 
-method _default_header () {
+method _default_header {
     return [
         Locale::File::PO::Header::Item->new(
             name => 'Project-Id-Version',
@@ -83,7 +83,7 @@ method _default_header () {
 }
 
 # get only
-method all_keys () {
+method all_keys {
     return map {
         $_->header_keys;
     } @{ $self->_header };
@@ -160,7 +160,7 @@ $HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/Locale-File-PO-Heade
 
 =head1 VERSION
 
-0.001
+0.002
 
 =head1 SYNOPSIS
 
