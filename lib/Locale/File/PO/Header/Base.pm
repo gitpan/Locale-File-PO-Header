@@ -1,4 +1,4 @@
-package Locale::File::PO::Header::Base;
+package Locale::File::PO::Header::Base; ## no critic (TidyCode)
 
 use Moose;
 

@@ -1,4 +1,4 @@
-package Locale::File::PO::Header::ContentTypeItem;
+package Locale::File::PO::Header::ContentTypeItem; ## no critic (TidyCode)
 
 use Moose;
 use MooseX::StrictConstructor;
@@ -118,8 +118,8 @@ method extract_msgstr ($msgstr_ref) {
         \s*
         $
     }{}xmsi;
-    $self->content_type($1); ## no critic (CaptureWithoutTest) 
-    $self->charset($2);      ## no critic (CaptureWithoutTest) 
+    $self->content_type($1); ## no critic (CaptureWithoutTest)
+    $self->charset($2);      ## no critic (CaptureWithoutTest)
 
     return;
 }

@@ -1,5 +1,8 @@
 Revision history for Perl extension Locale::File::PO::Header.
 
+0.003  Mon Mar 20 20:24:28 2012
+- repared Makefile.PL
+
 0.002  Sun Dec 18 08:00:00 2011
 - added the missing default for ...::Item
 - set a minimal version for Test::NoWarnings

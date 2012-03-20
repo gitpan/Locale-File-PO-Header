@@ -1,4 +1,4 @@
-package Locale::File::PO::Header::Item;
+package Locale::File::PO::Header::Item; ## no critic (TidyCode)
 
 use Moose;
 use MooseX::StrictConstructor;

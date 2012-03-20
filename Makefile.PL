@@ -10,7 +10,7 @@ WriteMakefile
                    'Moose' => 0,
                    'MooseX::StrictConstructor' => 0,
                    'Syntax::Feature::Method' => 0,
-                   'Test::Differences' => 0,
+                   'Test::Differences' => '0.60',
                    'Test::Exception' => 0,
                    'Test::More' => 0,
                    'Test::NoWarnings' => '1.03',
@@ -19,9 +19,6 @@ WriteMakefile
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],
-  'PL_FILES' => {},
-  'test' => {
-              'TESTS' => 't\\*.t t\\.svn\\*.t t\\.svn\\prop-base\\*.t t\\.svn\\props\\*.t t\\.svn\\text-base\\*.t t\\.svn\\tmp\\*.t t\\.svn\\tmp\\prop-base\\*.t t\\.svn\\tmp\\props\\*.t t\\.svn\\tmp\\text-base\\*.t'
-            }
+  'PL_FILES' => {}
 )
 ;

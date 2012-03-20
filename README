@@ -1,4 +1,4 @@
-Locale::File::PO::Header version 0.002
+Locale::File::PO::Header version 0.004
 ======================================
 
 Utils to build/extract the PO header.
@@ -34,7 +34,7 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (c) 2011,
+Copyright (c) 2011 - 2012,
 Steffen Winkler
 steffenw at cpan.org.
 All rights reserved.

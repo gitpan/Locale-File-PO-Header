@@ -1,4 +1,4 @@
-package Locale::File::PO::Header;
+package Locale::File::PO::Header; ## no critic (TidyCode)
 
 use Moose;
 use MooseX::StrictConstructor;
@@ -11,7 +11,7 @@ require Locale::File::PO::Header::MailItem;
 require Locale::File::PO::Header::ContentTypeItem;
 require Locale::File::PO::Header::ExtendedItem;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 has _header => (
     is       => 'rw',
@@ -160,7 +160,7 @@ $HeadURL: https://dbd-po.svn.sourceforge.net/svnroot/dbd-po/Locale-File-PO-Heade
 
 =head1 VERSION
 
-0.002
+0.003
 
 =head1 SYNOPSIS
 
@@ -343,7 +343,7 @@ Steffen Winkler
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2011,
+Copyright (c) 2011 - 2012,
 Steffen Winkler
 C<< <steffenw at cpan.org> >>.
 All rights reserved.

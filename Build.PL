@@ -22,7 +22,7 @@ Module::Build->new(
         'Test::More'        => 0, # dist Test-Simple
         'Test::NoWarnings'  => '1.03',
         'Test::Exception'   => 0,
-        'Test::Differences' => 0,
+        'Test::Differences' => '0.60',
     },
     recommends => {
         # build
@@ -31,8 +31,8 @@ Module::Build->new(
         'Pod::Coverage::Moose' => 0,
     },
     create_makefile_pl   => 'traditional',
-    recursive_test_files => 1,
+    recursive_test_files => 0,
     add_to_cleanup       => [ qw(
         META.yml *.bak *.gz Makefile.PL
     ) ],
-)->create_build_script();
+)->create_build_script;

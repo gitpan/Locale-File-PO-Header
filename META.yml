@@ -3,7 +3,7 @@ abstract: 'Locale::File::PO:Header - Utils to build/extract the PO header'
 author:
   - 'Steffen Winkler <steffenw at cpan.org>'
 build_requires:
-  Test::Differences: 0
+  Test::Differences: 0.60
   Test::Exception: 0
   Test::More: 0
   Test::NoWarnings: 1.03
@@ -19,7 +19,7 @@ name: Locale-File-PO-Header
 provides:
   Locale::File::PO::Header:
     file: lib/Locale/File/PO/Header.pm
-    version: 0.002
+    version: 0.003
   Locale::File::PO::Header::Base:
     file: lib/Locale/File/PO/Header/Base.pm
     version: 0.001
@@ -49,4 +49,4 @@ requires:
   syntax: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.002
+version: 0.003

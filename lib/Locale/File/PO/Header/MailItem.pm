@@ -1,4 +1,4 @@
-package Locale::File::PO::Header::MailItem;
+package Locale::File::PO::Header::MailItem; ## no critic (TidyCode)
 
 use Moose;
 use MooseX::StrictConstructor;
